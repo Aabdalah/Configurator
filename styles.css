@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/*
+#E8E8E8
+#f0712a
+#007399
+*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    border: 2px solid black;
+    width: 60vw;
+    margin: auto;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form h1{
+    background-color: #E8E8E8;
+    color:#007399;
+    height:10vh;
+    padding:1rem;
+    width: 100%;
+}
+fieldset{
+    margin:1rem;
+    padding: 1rem;
+    max-width: 90%;
+    width: 90%;
+    display:flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+fieldset legend{
+    color: #007399;
+}
+fieldset input{
+    margin: 1rem 0 1rem 1rem;
+}
+fieldset label{
+    color:#f0712a;
+}
+fieldset label , fieldset input{
+    cursor: pointer;
+}
+.form-box{
+    width:32%;
+    display:grid;
+    grid-template-columns: max-content 1fr;
+    align-items:center;
+    column-gap: 0.75rem;
+    border-bottom: 2px solid black;
+    margin-right: 10px;
+    max-width: 100%;
+}
+.form-box-input{
+    position: relative;
+    top:10px;
+    left:-20px;
+    max-width: 100%;
+}
+.form-label{
+    position: absolute;
+    left:15px;
+    top:18px;
+    transition:top 0.3s, font-size .3s;
+    font-size: 1.2rem;
+}
+.icon{
+    position: relative;
+    top:10px;
+}
+.form-box-input input{
+    padding-block:0.2rem;
+    background:none;
+    position: relative;
+    z-index: 1;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    width:100%;
+}
+.form-input:focus + .form-label{
+    top:0px;
+    font-size:1rem;
+}
+
+.form-input:not(:placeholder-shown).form-input:not(:focus)+.form-label{
+    top:0px;
+    font-size:1rem;
+}
+#other{
+    display:none;
+    margin-right: 0px;
+    max-height: 30px;
+    margin-left:10px;
+    transition: all 1s ease;
+}
+#other .form-box-input, #other .icon{
+    top:2px;
+}
+.two-cols{
+    width:90%;
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    gap:1rem;
+}
+.two-cols fieldset{
+    margin:0;
+    display:flex;
+    justify-content: space-evenly;
+}
+.two-cols:nth-of-type(2) fieldset:nth-of-type(2){
+    align-items: center;
+}
+.two-cols:nth-of-type(2) fieldset:nth-of-type(3){
+    align-items: center;
+}
+.two-cols fieldset .form-box{
+    width:100%;
+}
+.two-cols .form-box-input,.two-cols .icon{
+ top:10px;
+}
+fieldset p{
+    width: 100%;
+    color:#84989f;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+#contact div {
+    min-width:48%;
+}
+.form-button{
+    width:90%;
+    padding:1rem;
+    border-radius: .5rem;
+    background-color:#f0712a ;
+    color: white;
+    font-weight:bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    transition: all 1s ease;
+}
+.form-button:hover{
+    box-shadow: 0px 0px 10px 1px rgb(157, 152, 152);
+}
+
+
+@media only screen and (max-width:820px){
+    .form-box{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #other{
+        width:172px;
+        
+        margin-left:25px
+    }
+    .two-cols{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    textarea{
+        width:100%
+    }
+    #telephone-number-label{
+        font-size: 1rem;
+    }
+}
+@media  only screen and (max-width:550px) {
+    form{
+        width:80vw;
+    }
+    form h1{
+        height: 17vh;
+    }
+    fieldset:nth-child(3){
+        flex-direction: column;
+    }
+    fieldset{
+        max-width: 90%;
+        justify-content: flex-start;
+    }
+    .form-box{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .form-input{
+        width: 100%;
+    }
+    form h1{
+        text-align: center;;
+        padding:5px;
+    }
+    #other{
+       margin-left: 13px;
+    }
+    .two-cols fieldset{
+        justify-content: flex-start;
+    }
+
+    #contact div,#racking div{
+        width:100%
+    }
+    
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+

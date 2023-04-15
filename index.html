@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurator form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <form action="" method="post">
+        <h1>Configurator form</h1>
+        <fieldset>
+            <legend>COOLING/FREEZING ROOM TYPE</legend>
+            <div>
+                <input type="radio" name="cooling-type" id="cooling-type1" value="cooling-room-with-unit" required>
+                <label for="cooling-type1">
+                    Cooling room with unit
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="cooling-type" id="cooling-type2" value="freezing-room-with-unit">
+                <label for="cooling-type2">
+                    Freezing room with unit
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>MEASUREMENTS</legend>
+            <div class="form-box">
+                <span class="material-symbols-sharp icon">width</span>
+                <div class="form-box-input">
+                    <input class="form-input" type="number" name="width" id="width" value="" required placeholder=" ">
+                    <label for="" class="form-label">Width</label>
+                </div>
+            </div>
+            <div class="form-box">
+                <span class="material-symbols-sharp icon">move_to_inbox</span>
+                <div class="form-box-input">
+                    <input class="form-input" type="number" name="depth" id="depth" value="" required placeholder=" ">
+                    <label for="" class="form-label">Depth</label>
+                </div>
+            </div>
+            <div class="form-box">
+                <span class="material-symbols-sharp icon">height</span>
+                <div class="form-box-input">
+                    <input class="form-input" type="number" name="height" id="height" value="" required placeholder=" ">
+                    <label for="" class="form-label">Height</label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset id="add">
+            <legend>WALL THICKNESS</legend>
+            <div>
+                <input type="radio" name="wall-thickness" id="wall-thickness1" value="Thickness 60 mm" required>
+                <label for="wall-thickness1">
+                    Thickness 60 mm
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="wall-thickness" id="wall-thickness2" value="Thickness 70 mm ">
+                <label for="wall-thickness2">
+                    Thickness 70 mm 
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="wall-thickness" id="wall-thickness3" value="Thickness 80 mm">
+                <label for="wall-thickness3">
+                    Thickness 80 mm
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="wall-thickness" id="wall-thickness4" value="Thickness 100 mm">
+                <label for="wall-thickness4">
+                    Thickness 100 mm
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="wall-thickness" id="wall-thickness5" value="Thickness 130 mm">
+                <label for="wall-thickness5">
+                    Thickness 130 mm
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="wall-thickness" id="wall-thickness6" value="Thickness 140 mm">
+                <label for="wall-thickness6">
+                    Thickness 140 mm
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="wall-thickness" id="wall-thickness7" value="Other thickness">
+                <label for="wall-thickness7">
+                    Other thickness
+                </label>
+            </div>
+            
+        </fieldset>
+        <div class="two-cols">
+            <fieldset>
+                <legend>FLOOR</legend>
+                <div>
+                    <input type="radio" name="floor" id="floor-1" value="with-floor" required>
+                    <label for="floor-1">
+                        With floor
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="floor" id="floor-2" value="without-floor">
+                    <label for="floor-2">
+                        Without-floor
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>DOOR TYPE</legend>
+                <div>
+                    <input type="radio" name="door-type" id="door-type-1" value="swing-door" required>
+                    <label for="door-type-1">
+                        Swing-door
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="door-type" id="door-type-2" value="sliding-door">
+                    <label for="door-type-2">
+                        Sliding-door
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="two-cols">
+            <fieldset>
+                <legend>DOOR LOCATION</legend>
+                <div>
+                    <input type="radio" name="door-location" id="door-location-1" value="door-in-the-front" required>
+                    <label for="door-location-1">
+                        Door in the front
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="door-location" id="door-location-2" value="door-on-the-side">
+                    <label for="door-location-2">
+                        Door on the-side
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>DOOR POSITION</legend>
+                <div>
+                    <input type="radio" name="door-position" id="door-position-1" value="left" required>
+                    <label for="door-position-1">
+                        Left
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="door-position" id="door-position-2" value="middle">
+                    <label for="door-position-2">
+                        Middle
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="door-position" id="door-position-3" value="right">
+                    <label for="door-position-3">
+                        Right
+                    </label>
+                </div>
+               </fieldset>
+               <fieldset>
+                    <legend>DOOR OPENING WIDTH</legend>
+                    <div class="form-box">
+                        <span class="material-symbols-sharp icon">width</span>
+                        <div class="form-box-input">
+                            <input class="form-input" type="number" name="width" id="width" value="" required placeholder=" ">
+                            <label for="" class="form-label">Width</label>
+                        </div>
+                    </div>
+                </fieldset>
+        </div>
+        <fieldset>
+            <legend>COOLING UNIT TYPE</legend>
+            <p>A wall unit is mounted on the wall of the cell (inside and outside). A ceiling unit is mounted in the ceiling of the cell (inside and outside). A split unit consists of a part on the inside of the cell and a part outside the building, connected to each other by means of piping.</p>
+            <div>
+                <input type="radio" name="cooling-unit-type" id="cooling-unit-type-1" value="wall-unit" required>
+                <label for="cooling-unit-type-1">
+                    Wall unit
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="cooling-unit-type" id="cooling-unit-type-2" value="ceiling-unit">
+                <label for="cooling-unit-type-2">
+                    Ceiling unit
+                </label>
+            </div>
+            <div>
+                <input type="radio" name="cooling-unit-type" id="cooling-unit-type-3" value="split-unit">
+                <label for="cooling-unit-type-3">
+                    Split unit
+                </label>
+            </div>
+        </fieldset>
+        <div class="two-cols">
+            <fieldset>
+                <legend>INSTALLATION</legend>
+                <p>Do you want us to carry out the assembly and installation? You can!</p>
+                <div>
+                    <input type="radio" name="installation" id="installation-1" value="yes" required>
+                    <label for="installation-1">
+                        Yes
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="installation" id="installation-2" value="no">
+                    <label for="installation-2">
+                        No
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>STRIP CURTAIN</legend>
+                <p>A strip curtain ensures less cold loss when the door is opened and therefore saves energy.</p>
+                <div>
+                    <input type="radio" name="strip-curtain" id="strip-curtain-1" value="yes" required>
+                    <label for="strip-curtain-1">
+                        Yes
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="strip-curtain" id="strip-curtain-2" value="no">
+                    <label for="strip-curtain-2">
+                        No
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="two-cols">
+            <fieldset>
+                <legend>FLOOR BEAMS</legend>
+                <p>We particularly recommend floor beams for freezers. These provide extra insulation and less condensation. Floor beams are placed under the cell and are approx. 40 - 45 mm high.</p>
+                <div>
+                    <input type="radio" name="floor-beams" id="floor-beams-1" value="yes" required>
+                    <label for="floor-beams-1">
+                        Yes
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="floor-beams" id="floor-beams-2" value="no">
+                    <label for="floor-beams-2">
+                        No
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>RACKING</legend>
+                <div>
+                    <input type="radio" name="racking" id="racking-1" value="no" required>
+                    <label for="racking-1">
+                        No
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="racking" id="racking-2" value="straight-rack">
+                    <label for="racking-2">
+                        Straight rack
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="racking" id="racking-3" value="l-shaped-rack">
+                    <label for="racking-3">
+                        L-shaped rack
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" name="racking" id="racking-4" value="u-shaped-rack">
+                    <label for="racking-4">
+                        U-shaped rack
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+        <fieldset>
+            <legend>NOTES</legend>
+            <textarea name="notes" id="notes" placeholder="tell us what you think" rows="8" cols="50"></textarea>
+        </fieldset>
+        <fieldset id="contact">
+            <legend>CONTACT INFORMATION</legend>
+            <div class="form-box">
+                <span class="material-symbols-sharp icon">corporate_fare</span>
+                <div class="form-box-input">
+                    <input class="form-input" type="number" name="company-name" id="company-name" value="" required placeholder=" ">
+                    <label for="" class="form-label">Company name</label>
+                </div>
+            </div>
+            <div class="form-box">
+                <span class="material-symbols-sharp icon">person</span>
+                <div class="form-box-input">
+                    <input class="form-input" type="number" name="contact-person" id="contact-person" value="" required placeholder=" ">
+                    <label for="" class="form-label">Contact person</label>
+                </div>
+            </div>
+            <div class="form-box">
+                <span class="material-symbols-sharp icon">call</span>
+                <div class="form-box-input">
+                    <input class="form-input" type="tel" name="telephone-number" id="telephone-number" value="" required placeholder=" " pattern="(^\+[0-9]{2}|^\+[0-9]{2}\(0\)|^\(\+[0-9]{2}\)\(0\)|^00[0-9]{2}|^0)([0-9]{9}$|[0-9\-\s]{10}$)" title="dutch-style phone numbers. Possible example prefixes: +31, +31(0), (+31)(0), 0, 0031 followed by 9 numbers (which can contain a space or -).">
+                    <label for="" class="form-label" id="telephone-number-label">Telephone number</label>
+                </div>
+            </div>
+            <div class="form-box">
+                <span class="material-symbols-sharp icon">mail</span>
+                <div class="form-box-input">
+                    <input class="form-input" type="email" name="email-address" id="email-address" value="" required placeholder=" ">
+                    <label for="" class="form-label">Email address</label>
+                </div>
+            </div>
+        </fieldset>
+        <input type="submit" class="form-button" value="Send request">
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
